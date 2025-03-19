@@ -1,51 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-    <title>Age calculator App</title>
-</head>
-<body>
-    <div class="card">
-        <div class="set-date"> 
-            <div class="day-set">
-                <label id="label" for="day">DAY</label>
-                <input type="number" id="day" min="1" max="31" placeholder="DD"/>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
+        <title>Age calculator App</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="set-date"> 
+                <div class="day-set">
+                    <label id="label" class="error Label-day-error" for="day">DAY</label>
+                    <input class="Input Ective dayError" type="number" id="day" min="1" max="31" placeholder="DD"/>
+                    <span class = "error-text Eday"></span>
+                </div>
+                <div class="month-set">
+                    <label id="label" class="error Label-month-error" for="month">MONTH</label>
+                    <input class="Input Ective monthError" type="number" id="month" min="1" max="12" placeholder="MM"/>
+                    <span class = "error-text Emonth"></span>
+                </div>
+                <div class="year-set">
+                    <label id="label" class="error Label-year-error" for="year">YEAR</label>
+                    <input class="Input Ective yearError" type="number" id="year" min="0" max="2025" placeholder="YYYY"/>
+                    <span class = "error-text Eyear"></span>
+                </div>
             </div>
-            <div class="month-set">
-                <label id="label" for="month">MONTH</label>
-                <input type="number" id="month" min="1" max="12" placeholder="MM"/>
+            <div class="calculate">
+                <hr>
+                <div class="calculator">
+                    <img  src="/Age-Calculator-App/assets/images/icon-arrow.svg" alt="calculator">
+                </div>
             </div>
-            <div class="year-set">
-                <label id="label" for="year">YEAR</label>
-                <input type="number" id="year" min="1900" max="2025" placeholder="YYYY"/>
+            <div class="result">
+                <span class="age">
+                    <span class="year Res">- -</span>
+                    years
+                </span>
+                <span class="age">
+                    <span class="month Res">- -</span>
+                    months
+                </span>
+                <span class="age">
+                    <span class="day Res">- -</span>
+                    days
+                </span>
             </div>
         </div>
-        <div class="calculate">
-            <hr>
-            <div class="calculator">
-                <img  src="/Age-Calculator-App/assets/images/icon-arrow.svg" alt="calculator">
-            </div>
-        </div>
-        <div class="result">
-            <span class="age">
-                <span class="year">--</span>
-                years
-            </span>
-            <span class="age">
-                <span class="month">--</span>
-                months
-            </span>
-            <span class="age">
-                <span class="day">--</span>
-                days
-            </span>
-        </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
