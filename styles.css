@@ -23,18 +23,21 @@ body{
 }
 .card{
     width: 60vw;
-    height: 70vh;
+    min-height: 50vh;
+    max-height: 100vh;
     display: flex;
     background-color: var(--White);
-    margin: 15vh 20vw;
+    margin: 14vh 20vw;
     border-radius: 20px 20px 150px 20px;
     flex-direction: column;
-    padding-left: 1.87rem;
+    padding-left: 2rem;
+    overflow:visible;
+    padding-bottom: 0.9em;
 }
 .set-date{
     display: flex;
     flex-direction: row;
-    margin-top:1.6rem;
+    margin-top:1.5rem;
 }
 .day-set ,.month-set ,.year-set{
     display: flex;
@@ -43,21 +46,33 @@ body{
 }
 #label{
     font-size: 0.4rem;
-    font-weight: 600;
+    font-weight:700;
     color: var(--Smokey-grey);
     margin-bottom:0.1rem ;
 }
 input{
-    width:6rem;
-    height: 2.5rem;
-    padding-left: 0.5rem;
-    border-color:var(--Off-white);
+    width:4.5rem;
+    height: 2rem;
+    padding-left: 0.6rem;
+    outline: none;
+    font-weight: 600;
+    border: 1px solid var(--Light-grey);
+    cursor: pointer;
+
     
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    caret-color: var(--Purple);
+}
+
+.Input:focus{
+    border-color: var(--Purple);
 }
 .calculate{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;;
 }
 hr{
     width: 80%;
@@ -78,12 +93,27 @@ hr{
 }
 
 .result{
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
+    line-height: 3rem;
+    margin-top: -0.5rem;
+}
+.Res{
+    font-size: 900;
+    font-size: 3rem;
+    color: var(--Purple);
+
 }
 .age{
-    font-size: 2.5rem;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight:900;
+    color: var(--Off-black);
+}
+
+.error-text{
+    color: var(--Light-red);
+    font-size: 0.4rem;
     font-weight: 700;
+    margin-top: 0.5rem;
 }
