@@ -58,6 +58,7 @@ input{
     font-weight: 600;
     border: 1px solid var(--Light-grey);
     cursor: pointer;
+    border-radius: 10px;
 
     
 }
@@ -72,7 +73,8 @@ input[type=number] {
 .calculate{
     display: flex;
     flex-direction: row;
-    align-items: center;;
+    align-items: center;
+
 }
 hr{
     width: 80%;
@@ -116,4 +118,114 @@ hr{
     font-size: 0.4rem;
     font-weight: 700;
     margin-top: 0.5rem;
+}
+@media screen and (max-width: 450px){
+    .card{
+        width: 90vw;
+        margin: 10vh 5vw;
+        padding: 0 0.5rem 1rem;
+    }
+    .set-date{
+        width: 100%;
+    }
+    .day-set ,.month-set {
+        margin-right: 0.5rem;
+    }
+    .year-set{
+        margin-right: 0;
+    }
+
+    #label{
+        font-size: 0.4rem;
+        letter-spacing: 0.1rem;
+    }
+    input{
+        width: 2.7rem;
+        height: 1.5rem;
+        padding-left: 0.4rem;
+        font-size: 0.7rem;
+    } 
+    .calculate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    hr{
+        width: 100%;
+        position:absolute;
+    }
+    .calculator{
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        align-items: center;
+        padding:auto;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+    .calculator img{
+        width: 1rem;
+        height:1rem;
+    }
+    .age,.Res{
+        font-size:1.7rem;
+    }
+    
+}
+@media screen and (450px < width < 1000px){
+    .card{
+        width: 75vw;
+        margin: 10vh 25vw;
+        padding: 0 0.5rem 1rem;
+    }
+    .set-date{
+        width: 100%;
+    }
+    .day-set ,.month-set {
+        margin-right: 0.5rem;
+    }
+    .year-set{
+        margin-right: 0;
+    }
+
+    #label{
+        font-size: 0.4rem;
+        letter-spacing: 0.1rem;
+    }
+    input{
+        width: 3rem;
+        height: 1.5rem;
+        padding-left: 0.4rem;
+        font-size: 0.7rem;
+    } 
+    .calculate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    hr{
+        width: 100%;
+        position:absolute;
+    }
+    .calculator{
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        align-items: center;
+        padding:auto;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+    .calculator img{
+        width: 1rem;
+        height:1rem;
+    }
+    .age,.Res{
+        font-size:1.7rem;
+    }
+    
 }
